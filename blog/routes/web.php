@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('index');
 });
@@ -23,3 +23,16 @@ Route::get('/welcome/{namadepan}/{namabelakang}', function ($namadepan,$namabela
 Route::get('/redirect','HomeController@redirect');
 Route::get('/datang','AuthController@datang');
 Route::post('/datang','AuthController@datang_post');
+*/
+Route::get('/',function(){
+    return view('tableawal');
+});
+Route::get('/data-tables',function(){
+    return view('datatable');
+});
+Route::get('/items',function(){
+    return view('items.index');
+});
+Route::get('/master',function(){
+    return view('adminlte.master');
+});
